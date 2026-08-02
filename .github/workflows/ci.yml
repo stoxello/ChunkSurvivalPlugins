@@ -1,0 +1,42 @@
+name: Plugin CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - name: Install .NET 9 SDK
+        uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Restore
+        run: dotnet restore ChunkSurvivalPlugins.sln
+
+      - name: Build
+        run: dotnet build ChunkSurvivalPlugins.sln --configuration Release --no-restore --nologo
+
+      - name: Package plugins
+        shell: pwsh
+        run: ./tools/package-all-plugins.ps1 -Configuration Release -NoBuild
+
+      - name: Upload plugin packages
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: chunk-survival-plugins
+          path: artifacts/plugins/*.zip
+          if-no-files-found: error
+          retention-days: 14
