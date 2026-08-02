@@ -1,0 +1,7 @@
+name: HelloPlugin
+version: 1.1.0
+main: HelloPlugin.dll
+entrypoint: HelloPlugin.HelloPlugin
+api-version: 1.1
+# depend: [RequiredPlugin]
+# softdepend: [OptionalPlugin]

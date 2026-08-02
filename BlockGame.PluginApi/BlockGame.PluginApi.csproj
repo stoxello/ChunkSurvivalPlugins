@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>BlockGame.PluginApi</AssemblyName>
+    <RootNamespace>BlockGame.PluginApi</RootNamespace>
+    <Description>Stable server plugin contract for Chunk Survival.</Description>
+  </PropertyGroup>
+</Project>

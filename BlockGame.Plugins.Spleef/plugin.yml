@@ -1,0 +1,5 @@
+name: Spleef
+version: 1.0.0
+main: BlockGame.Plugins.Spleef.dll
+entrypoint: BlockGame.Plugins.Spleef.SpleefPlugin
+api-version: 2.0

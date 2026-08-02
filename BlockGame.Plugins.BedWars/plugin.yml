@@ -1,0 +1,5 @@
+name: BedWars
+version: 1.0.0
+main: BlockGame.Plugins.BedWars.dll
+entrypoint: BlockGame.Plugins.BedWars.BedWarsPlugin
+api-version: 2.0

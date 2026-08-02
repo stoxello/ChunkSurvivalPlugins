@@ -1,0 +1,5 @@
+name: DeathRun
+version: 1.0.0
+main: BlockGame.Plugins.DeathRun.dll
+entrypoint: BlockGame.Plugins.DeathRun.DeathRunPlugin
+api-version: 2.0

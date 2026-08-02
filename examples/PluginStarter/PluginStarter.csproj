@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The server supplies this assembly. Private=false keeps it out of the package. -->
+    <ProjectReference Include="..\..\BlockGame.PluginApi\BlockGame.PluginApi.csproj" Private="false" />
+    <None Include="plugin.yml" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

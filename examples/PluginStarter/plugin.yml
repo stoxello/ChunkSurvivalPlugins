@@ -1,0 +1,7 @@
+name: PluginStarter
+version: 1.0.0
+main: PluginStarter.dll
+entrypoint: PluginStarter.PluginStarter
+api-version: 2.0
+# depend: [RequiredPlugin]
+# softdepend: [OptionalPlugin]

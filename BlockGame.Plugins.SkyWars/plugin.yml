@@ -1,0 +1,5 @@
+name: SkyWars
+version: 1.0.0
+main: BlockGame.Plugins.SkyWars.dll
+entrypoint: BlockGame.Plugins.SkyWars.SkyWarsPlugin
+api-version: 2.0
