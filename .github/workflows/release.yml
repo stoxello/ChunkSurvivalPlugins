@@ -3,7 +3,7 @@ name: Plugin Release
 on:
   push:
     tags:
-      - "v*"
+      - "plugin-v*"
 
 permissions:
   contents: write
@@ -34,7 +34,7 @@ jobs:
         env:
           RELEASE_VERSION: ${{ github.ref_name }}
         run: |
-          $version = $env:RELEASE_VERSION -replace '^v', ''
+          $version = $env:RELEASE_VERSION -replace '^plugin-v', ''
           ./tools/package-all-plugins.ps1 `
             -Configuration Release `
             -ExpectedVersion $version `
@@ -48,8 +48,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          version="${GITHUB_REF_NAME#plugin-v}"
           prerelease=""
-          if [[ "${GITHUB_REF_NAME}" == *-* ]]; then
+          if [[ "${version}" == *-* ]]; then
             prerelease="--prerelease"
           fi
           gh release create "${GITHUB_REF_NAME}" \

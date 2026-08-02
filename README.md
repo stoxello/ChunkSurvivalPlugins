@@ -26,9 +26,12 @@ server supplies `BlockGame.PluginApi.dll`, so it is intentionally excluded.
 GitHub Actions builds and packages every pull request and every push to
 `master`. To publish a release:
 
+- Game-client releases use `client-vX.Y.Z` in the private game repository.
+- Plugin-bundle releases use `plugin-vX.Y.Z` in this repository.
+
 1. Set the same release version in each official plugin's `plugin.yml`.
 2. Commit and push the release changes.
-3. Create and push a matching tag such as `v1.2.0`.
+3. Create and push a matching tag such as `plugin-v1.2.0`.
 
 The release workflow verifies the manifest versions, builds the solution,
 creates one ZIP per plugin plus `SHA256SUMS.txt`, and publishes them on the
