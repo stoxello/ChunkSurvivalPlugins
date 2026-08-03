@@ -1,5 +1,5 @@
 name: SkyBlock
-version: 1.0.0
+version: 1.0.5
 main: BlockGame.Plugins.SkyBlock.dll
 entrypoint: BlockGame.Plugins.SkyBlock.SkyBlockPlugin
 api-version: 2.0

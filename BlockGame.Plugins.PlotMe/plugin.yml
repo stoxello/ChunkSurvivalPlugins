@@ -1,5 +1,5 @@
 name: PlotMe
-version: 1.0.0
+version: 1.0.5
 main: BlockGame.Plugins.PlotMe.dll
 entrypoint: BlockGame.Plugins.PlotMe.PlotMePlugin
 api-version: 2.0

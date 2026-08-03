@@ -14,7 +14,7 @@ public sealed class SkyBlockPlugin : GamePlugin
     private bool active;
 
     public override string Name => "SkyBlock";
-    public override string Version => "1.0.0";
+    public override string Version => "1.0.5";
 
     public override void OnLoad()
     {

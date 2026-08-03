@@ -13,7 +13,7 @@ public sealed class PlotMePlugin : GamePlugin
     private bool active;
 
     public override string Name => "PlotMe";
-    public override string Version => "1.0.0";
+    public override string Version => "1.0.5";
 
     public override void OnLoad()
     {

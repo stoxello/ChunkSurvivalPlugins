@@ -18,7 +18,7 @@ public sealed class HideAndSeekPlugin : MinigamePlugin
     private int lastCountdown = -1;
 
     public override string Name => "HideAndSeek";
-    public override string Version => "1.0.0";
+    public override string Version => "1.0.5";
     protected override string MinigameId => "hideandseek";
     protected override IReadOnlyCollection<string> MinigameAliases => new[] { "hide-and-seek" };
 

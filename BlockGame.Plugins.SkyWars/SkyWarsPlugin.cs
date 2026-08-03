@@ -15,7 +15,7 @@ public sealed class SkyWarsPlugin : MinigamePlugin
     private int lastCountdown = -1;
 
     public override string Name => "SkyWars";
-    public override string Version => "1.0.0";
+    public override string Version => "1.0.5";
     protected override string MinigameId => "skywars";
 
     protected override void OnMinigameLoad() => LoadFiles();

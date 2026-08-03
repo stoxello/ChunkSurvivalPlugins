@@ -17,7 +17,7 @@ public sealed class DeathRunPlugin : MinigamePlugin
     private double clock, stateEnds, nextTrap;
 
     public override string Name => "DeathRun";
-    public override string Version => "1.0.0";
+    public override string Version => "1.0.5";
     protected override string MinigameId => "deathrun";
 
     protected override void OnMinigameLoad() => LoadFiles();

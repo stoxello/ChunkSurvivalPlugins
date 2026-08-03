@@ -16,7 +16,7 @@ public sealed class BedWarsPlugin : MinigamePlugin
     private double clock, stateEnds, nextGenerator;
 
     public override string Name => "BedWars";
-    public override string Version => "1.0.0";
+    public override string Version => "1.0.5";
     protected override string MinigameId => "bedwars";
     protected override void OnMinigameLoad() => LoadFiles();
 

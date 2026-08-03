@@ -16,7 +16,7 @@ public sealed class SpleefPlugin : MinigamePlugin
     private double stateEnds;
     private int lastCountdown = -1;
     public override string Name => "Spleef";
-    public override string Version => "1.0.0";
+    public override string Version => "1.0.5";
     protected override string MinigameId => "spleef";
 
     protected override void OnMinigameLoad()

@@ -1,5 +1,5 @@
 name: Citizens
-version: 1.0.0
+version: 1.0.5
 main: BlockGame.Plugins.Citizens.dll
 entrypoint: BlockGame.Plugins.Citizens.CitizensPlugin
 api-version: 2.1

@@ -21,7 +21,7 @@ public sealed class CitizensPlugin : GamePlugin
     private int nextId = 1;
 
     public override string Name => "Citizens";
-    public override string Version => "1.0.0";
+    public override string Version => "1.0.5";
 
     public override void OnLoad() => LoadFiles();
 
